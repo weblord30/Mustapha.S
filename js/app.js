@@ -17,7 +17,7 @@ chips.forEach(chip => {
     chip.classList.add('is-active');
     const f = chip.dataset.filter;
     cards.forEach(card => {
-      const tags = card.getAttribute('data-tags') || '';
+      const tags = (card.getAttribute('data-tags') || '').split(/\s+/);
       card.style.display = (f === 'all' || tags.includes(f)) ? '' : 'none';
     });
   });
