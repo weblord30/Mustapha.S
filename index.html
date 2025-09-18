@@ -38,7 +38,6 @@
         <li role="none"><a role="menuitem" href="#contact" class="nav__link nav__link--cta">Contact</a></li>
       </ul>
 
-      <!-- Dark mode toggle -->
       <button id="themeToggle" class="btn btn--ghost nav__theme" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
     </nav>
   </header>
@@ -48,11 +47,13 @@
       <div class="hero__intro">
         <p class="hero__eyebrow">Hello, I’m</p>
         <h1 class="hero__title" id="intro-title">Mustapha <span>Sulaimon</span></h1>
-        <p class="hero__subtitle">Product Designer & Full-Stack Developer. I design, build, and ship products that people enjoy using.</p>
-       <ul class="hero__bullets list list--checks">
-            <li>UX that converts, code that scales</li>
-            <li>Case studies with outcomes, not just screens</li>
-            <li>Available for select projects</li>
+        <p class="hero__subtitle">Product Designer & Full-Stack Developer. I design, build, and ship products people enjoy using.</p>
+
+        <!-- Custom check list -->
+        <ul class="hero__bullets list list--checks">
+          <li>UX that converts, code that scales</li>
+          <li>Case studies with outcomes, not just screens</li>
+          <li>Available for select projects</li>
         </ul>
 
         <div class="hero__actions">
@@ -61,14 +62,16 @@
           <a href="#contact" class="btn btn--ghost">Book a Call</a>
         </div>
       </div>
+
       <div class="hero__photo-box">
-        <!-- Replace later -->
+        <!-- Replace images later -->
         <picture>
           <source srcset="images/profile@2x.webp 2x, images/profile.webp 1x" type="image/webp" />
           <img src="images/profile.jpg" srcset="images/profile@2x.jpg 2x" width="520" height="520" alt="Portrait of Mustapha Sulaimon" class="hero__photo" loading="eager" />
         </picture>
       </div>
     </div>
+
     <div class="hero__socials" aria-label="Social links">
       <a href="https://github.com/username" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
       <a href="https://linkedin.com/in/username" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
@@ -84,25 +87,27 @@
         <article class="service" aria-labelledby="svc-ux">
           <h3 class="service__title" id="svc-ux">Product Design (UI/UX)</h3>
           <p class="service__desc">Research, strategy, flows, wireframes, high-fidelity design, and accessibility checks.</p>
-          <ul class="service__bullets">
+          <ul class="service__bullets list list--dots">
             <li>Design audits & WCAG 2.2 AA</li>
             <li>Prototypes and user testing</li>
             <li>Design systems and tokens</li>
           </ul>
         </article>
+
         <article class="service" aria-labelledby="svc-dev">
           <h3 class="service__title" id="svc-dev">Full-Stack Development</h3>
           <p class="service__desc">From API to UI with performance budgets, tests, and docs.</p>
-          <ul class="service__bullets">
+          <ul class="service__bullets list list--dots">
             <li>React / Next.js, Node, TypeScript</li>
             <li>REST/GraphQL, Prisma</li>
             <li>Testing and observability</li>
           </ul>
         </article>
+
         <article class="service" aria-labelledby="svc-wp">
           <h3 class="service__title" id="svc-wp">WordPress & CMS</h3>
-          <p class="service__desc">Custom themes, blocks, and editor experiences people can maintain.</p>
-          <ul class="service__bullets">
+          <p class="service__desc">Custom themes, blocks, and editor experiences teams can maintain.</p>
+          <ul class="service__bullets list list--dots">
             <li>Gutenberg / ACF</li>
             <li>SEO & structured data</li>
             <li>Core Web Vitals</li>
@@ -124,16 +129,15 @@
       <div class="projects__grid">
         <article class="project" data-tags="design development" aria-labelledby="proj-1-title">
           <figure class="project__media">
-            <!-- Replace later -->
-            <img class="project__img" src="images/project1.jpg" width="1200" height="800" alt="Analytics dashboard redesign" loading="lazy" />
+            <img class="project__img" src="images/project1.jpg" alt="Analytics dashboard redesign" loading="lazy" />
           </figure>
           <div class="project__info">
             <h3 class="project__title" id="proj-1-title">Analytics Dashboard Redesign</h3>
             <p class="project__desc">Reduced time-to-insight by 43% with new IA and accessible components.</p>
-            <ul class="project__meta">
+            <ul class="project__meta list list--inline list--compact">
               <li><strong>Role:</strong> Lead Designer & Engineer</li>
               <li><strong>Stack:</strong> Next.js, D3, Node</li>
-              <li><strong>Impact:</strong> +18% activation, −32% support tickets</li>
+              <li><strong>Impact:</strong> +18% activation, −32% tickets</li>
             </ul>
             <div class="project__links">
               <a href="#" class="btn btn--inline" target="_blank" rel="noopener">Case Study</a>
@@ -145,15 +149,15 @@
 
         <article class="project" data-tags="wordpress" aria-labelledby="proj-2-title">
           <figure class="project__media">
-            <img class="project__img" src="images/project2.jpg" width="1200" height="800" alt="Content marketing site" loading="lazy" />
+            <img class="project__img" src="images/project2.jpg" alt="Content marketing site" loading="lazy" />
           </figure>
           <div class="project__info">
             <h3 class="project__title" id="proj-2-title">Content-Driven Marketing Site</h3>
             <p class="project__desc">Custom blocks and schema markup boosted organic traffic 2.4× in 90 days.</p>
-            <ul class="project__meta">
+            <ul class="project__meta list list--inline list--compact">
               <li><strong>Role:</strong> Developer</li>
               <li><strong>Stack:</strong> WordPress, PHP, ACF</li>
-              <li><strong>Impact:</strong> +2.4× organic, +27% demo requests</li>
+              <li><strong>Impact:</strong> +2.4× organic, +27% demos</li>
             </ul>
             <div class="project__links">
               <a href="#" class="btn btn--inline" target="_blank" rel="noopener">Case Study</a>
@@ -164,12 +168,12 @@
 
         <article class="project" data-tags="design" aria-labelledby="proj-3-title">
           <figure class="project__media">
-            <img class="project__img" src="images/project3.jpg" width="1200" height="800" alt="Mobile onboarding flow" loading="lazy" />
+            <img class="project__img" src="images/project3.jpg" alt="Mobile onboarding flow" loading="lazy" />
           </figure>
           <div class="project__info">
             <h3 class="project__title" id="proj-3-title">Mobile Onboarding Flow</h3>
-            <p class="project__desc">Tested three flows and shipped a winner that increased completion by 22%.</p>
-            <ul class="project__meta">
+            <p class="project__desc">Tested three flows and shipped the winner. +22% completion.</p>
+            <ul class="project__meta list list--inline list--compact">
               <li><strong>Role:</strong> UX</li>
               <li><strong>Stack:</strong> Figma, Maze</li>
               <li><strong>Impact:</strong> +22% completion</li>
@@ -184,17 +188,18 @@
 
     <section class="process section" id="process" aria-labelledby="process-title">
       <h2 class="section__title" id="process-title">How I work</h2>
-      <ol class="process__steps">
+      <!-- Custom numbered list -->
+      <ol class="process__steps ol">
         <li><strong>Discover</strong> — quick interviews, analytics review, and a brief tied to metrics</li>
-        <li><strong>Design</strong> — flows, wireframes, prototypes, and accessibility checks</li>
-        <li><strong>Build</strong> — type-safe code, tests, and performance budgets</li>
+        <li><strong>Design</strong> — flows, wireframes, prototypes, accessibility checks</li>
+        <li><strong>Build</strong> — type-safe code, tests, performance budgets</li>
         <li><strong>Ship & learn</strong> — track impact, iterate, document</li>
       </ol>
     </section>
 
     <section class="writing section" id="writing" aria-labelledby="writing-title">
       <h2 class="section__title" id="writing-title">Writing</h2>
-      <ul class="posts">
+      <ul class="posts list">
         <li class="post"><a href="#">Designing with real constraints</a> <time datetime="2025-08-02">Aug 2, 2025</time></li>
         <li class="post"><a href="#">Accessible modals without frameworks</a> <time datetime="2025-06-14">Jun 14, 2025</time></li>
         <li class="post"><a href="#">Show outcomes, not mockups</a> <time datetime="2025-04-30">Apr 30, 2025</time></li>
