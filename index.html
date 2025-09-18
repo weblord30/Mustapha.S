@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mustapha Sulaimon — Product Designer & Full-Stack Developer</title>
+  <meta name="description" content="I design and build fast, accessible products. Case studies with real outcomes. Lagos, Nigeria." />
+  <link rel="canonical" href="https://mustaphasulaimon.example" />
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b0b0b" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mustapha Sulaimon — Product Designer & Full-Stack Developer" />
+  <meta property="og:description" content="Selected work, metrics, and process." />
+  <meta property="og:image" content="https://mustaphasulaimon.example/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header" id="header" role="banner">
+    <nav class="nav" aria-label="Primary">
+      <a href="#hero" class="nav__brand" aria-label="Home">MS</a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-controls="navMenu" aria-expanded="false">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu" role="menubar">
+        <li role="none"><a role="menuitem" href="#services" class="nav__link">Services</a></li>
+        <li role="none"><a role="menuitem" href="#projects" class="nav__link">Work</a></li>
+        <li role="none"><a role="menuitem" href="#process" class="nav__link">Process</a></li>
+        <li role="none"><a role="menuitem" href="#writing" class="nav__link">Writing</a></li>
+        <li role="none"><a role="menuitem" href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+
+      <!-- Dark mode toggle -->
+      <button id="themeToggle" class="btn btn--ghost nav__theme" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero" aria-labelledby="intro-title">
+    <div class="hero__content">
+      <div class="hero__intro">
+        <p class="hero__eyebrow">Hello, I’m</p>
+        <h1 class="hero__title" id="intro-title">Mustapha <span>Sulaimon</span></h1>
+        <p class="hero__subtitle">Product Designer & Full-Stack Developer. I design, build, and ship products that people enjoy using.</p>
+       <ul class="hero__bullets list list--checks">
+            <li>UX that converts, code that scales</li>
+            <li>Case studies with outcomes, not just screens</li>
+            <li>Available for select projects</li>
+        </ul>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">See Selected Work</a>
+          <a href="assets/resume.pdf" class="btn btn--secondary" target="_blank" rel="noopener">Download CV</a>
+          <a href="#contact" class="btn btn--ghost">Book a Call</a>
+        </div>
+      </div>
+      <div class="hero__photo-box">
+        <!-- Replace later -->
+        <picture>
+          <source srcset="images/profile@2x.webp 2x, images/profile.webp 1x" type="image/webp" />
+          <img src="images/profile.jpg" srcset="images/profile@2x.jpg 2x" width="520" height="520" alt="Portrait of Mustapha Sulaimon" class="hero__photo" loading="eager" />
+        </picture>
+      </div>
+    </div>
+    <div class="hero__socials" aria-label="Social links">
+      <a href="https://github.com/username" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+      <a href="https://linkedin.com/in/username" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://twitter.com/username" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
+      <a href="#writing" aria-label="Writing">Writing</a>
+    </div>
+  </section>
+
+  <main id="main">
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <h2 class="section__title" id="services-title">What I do</h2>
+      <div class="services__list">
+        <article class="service" aria-labelledby="svc-ux">
+          <h3 class="service__title" id="svc-ux">Product Design (UI/UX)</h3>
+          <p class="service__desc">Research, strategy, flows, wireframes, high-fidelity design, and accessibility checks.</p>
+          <ul class="service__bullets">
+            <li>Design audits & WCAG 2.2 AA</li>
+            <li>Prototypes and user testing</li>
+            <li>Design systems and tokens</li>
+          </ul>
+        </article>
+        <article class="service" aria-labelledby="svc-dev">
+          <h3 class="service__title" id="svc-dev">Full-Stack Development</h3>
+          <p class="service__desc">From API to UI with performance budgets, tests, and docs.</p>
+          <ul class="service__bullets">
+            <li>React / Next.js, Node, TypeScript</li>
+            <li>REST/GraphQL, Prisma</li>
+            <li>Testing and observability</li>
+          </ul>
+        </article>
+        <article class="service" aria-labelledby="svc-wp">
+          <h3 class="service__title" id="svc-wp">WordPress & CMS</h3>
+          <p class="service__desc">Custom themes, blocks, and editor experiences people can maintain.</p>
+          <ul class="service__bullets">
+            <li>Gutenberg / ACF</li>
+            <li>SEO & structured data</li>
+            <li>Core Web Vitals</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <h2 class="section__title" id="projects-title">Selected work</h2>
+
+      <div class="projects__filters" role="group" aria-label="Filter projects">
+        <button class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="design">Design</button>
+        <button class="chip" data-filter="development">Development</button>
+        <button class="chip" data-filter="wordpress">WordPress</button>
+      </div>
+
+      <div class="projects__grid">
+        <article class="project" data-tags="design development" aria-labelledby="proj-1-title">
+          <figure class="project__media">
+            <!-- Replace later -->
+            <img class="project__img" src="images/project1.jpg" width="1200" height="800" alt="Analytics dashboard redesign" loading="lazy" />
+          </figure>
+          <div class="project__info">
+            <h3 class="project__title" id="proj-1-title">Analytics Dashboard Redesign</h3>
+            <p class="project__desc">Reduced time-to-insight by 43% with new IA and accessible components.</p>
+            <ul class="project__meta">
+              <li><strong>Role:</strong> Lead Designer & Engineer</li>
+              <li><strong>Stack:</strong> Next.js, D3, Node</li>
+              <li><strong>Impact:</strong> +18% activation, −32% support tickets</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" class="btn btn--inline" target="_blank" rel="noopener">Case Study</a>
+              <a href="#" class="btn btn--inline" target="_blank" rel="noopener">Live</a>
+              <a href="#" class="btn btn--inline" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-tags="wordpress" aria-labelledby="proj-2-title">
+          <figure class="project__media">
+            <img class="project__img" src="images/project2.jpg" width="1200" height="800" alt="Content marketing site" loading="lazy" />
+          </figure>
+          <div class="project__info">
+            <h3 class="project__title" id="proj-2-title">Content-Driven Marketing Site</h3>
+            <p class="project__desc">Custom blocks and schema markup boosted organic traffic 2.4× in 90 days.</p>
+            <ul class="project__meta">
+              <li><strong>Role:</strong> Developer</li>
+              <li><strong>Stack:</strong> WordPress, PHP, ACF</li>
+              <li><strong>Impact:</strong> +2.4× organic, +27% demo requests</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" class="btn btn--inline" target="_blank" rel="noopener">Case Study</a>
+              <a href="#" class="btn btn--inline" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-tags="design" aria-labelledby="proj-3-title">
+          <figure class="project__media">
+            <img class="project__img" src="images/project3.jpg" width="1200" height="800" alt="Mobile onboarding flow" loading="lazy" />
+          </figure>
+          <div class="project__info">
+            <h3 class="project__title" id="proj-3-title">Mobile Onboarding Flow</h3>
+            <p class="project__desc">Tested three flows and shipped a winner that increased completion by 22%.</p>
+            <ul class="project__meta">
+              <li><strong>Role:</strong> UX</li>
+              <li><strong>Stack:</strong> Figma, Maze</li>
+              <li><strong>Impact:</strong> +22% completion</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" class="btn btn--inline" target="_blank" rel="noopener">Read Notes</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="process section" id="process" aria-labelledby="process-title">
+      <h2 class="section__title" id="process-title">How I work</h2>
+      <ol class="process__steps">
+        <li><strong>Discover</strong> — quick interviews, analytics review, and a brief tied to metrics</li>
+        <li><strong>Design</strong> — flows, wireframes, prototypes, and accessibility checks</li>
+        <li><strong>Build</strong> — type-safe code, tests, and performance budgets</li>
+        <li><strong>Ship & learn</strong> — track impact, iterate, document</li>
+      </ol>
+    </section>
+
+    <section class="writing section" id="writing" aria-labelledby="writing-title">
+      <h2 class="section__title" id="writing-title">Writing</h2>
+      <ul class="posts">
+        <li class="post"><a href="#">Designing with real constraints</a> <time datetime="2025-08-02">Aug 2, 2025</time></li>
+        <li class="post"><a href="#">Accessible modals without frameworks</a> <time datetime="2025-06-14">Jun 14, 2025</time></li>
+        <li class="post"><a href="#">Show outcomes, not mockups</a> <time datetime="2025-04-30">Apr 30, 2025</time></li>
+      </ul>
+    </section>
+
+    <section class="testimonials section" id="testimonials" aria-labelledby="testimonials-title">
+      <h2 class="section__title" id="testimonials-title">What clients say</h2>
+      <div class="testimonials__list">
+        <figure class="testimonial">
+          <img src="images/testimonial1.jpg" alt="Client A" class="testimonial__avatar" loading="lazy" width="72" height="72" />
+          <blockquote class="testimonial__text">“Mustapha turned a messy brief into a product that converts.”</blockquote>
+          <figcaption class="testimonial__author">O. Adewale, Product Lead</figcaption>
+        </figure>
+        <figure class="testimonial">
+          <img src="images/testimonial2.jpg" alt="Client B" class="testimonial__avatar" loading="lazy" width="72" height="72" />
+          <blockquote class="testimonial__text">“Clean code, thoughtful design, steady delivery.”</blockquote>
+          <figcaption class="testimonial__author">T. Mensah, CTO</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <h2 class="section__title" id="contact-title">Get in touch</h2>
+      <p class="contact__intro">Tell me about your goals — timeline, scope, and success metrics.</p>
+      <div class="contact__wrapper">
+        <form class="contact__form" id="contactForm" action="https://formspree.io/f/your-id" method="POST" autocomplete="off">
+          <div class="sr-only" aria-hidden="true">
+            <label>Leave this field empty: <input name="_gotcha" tabindex="-1" autocomplete="off"></label>
+          </div>
+          <label><span>Your Name</span><input type="text" name="name" required /></label>
+          <label><span>Your Email</span><input type="email" name="email" required /></label>
+          <label><span>Project Budget (optional)</span><input type="text" name="budget" placeholder="$5k–$20k" /></label>
+          <label><span>Your Message</span><textarea name="message" rows="5" required></textarea></label>
+          <button type="submit" class="btn btn--primary">Send message</button>
+        </form>
+        <div class="contact__details">
+          <p><strong>Email:</strong> <a href="mailto:hello@mustaphasulaimon.example">hello@mustaphasulaimon.example</a></p>
+          <p><strong>Location:</strong> Lagos, Nigeria</p>
+          <p><strong>Calendly:</strong> <a href="#">Book a 20-min intro</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="footer__content">
+      <p>&copy; <span id="year"></span> Mustapha Sulaimon · Built with semantic HTML, CSS & JS</p>
+      <nav class="footer__socials" aria-label="Footer">
+        <a href="https://github.com/username" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/username" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://twitter.com/username" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mustapha Sulaimon",
+    "jobTitle": "Product Designer & Full-Stack Developer",
+    "url": "https://mustaphasulaimon.example",
+    "image": "https://mustaphasulaimon.example/images/profile.jpg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lagos", "addressCountry": "NG" },
+    "sameAs": [
+      "https://github.com/username",
+      "https://www.linkedin.com/in/username",
+      "https://twitter.com/username"
+    ]
+  }
+  </script>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
